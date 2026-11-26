@@ -1,0 +1,955 @@
+[
+  {
+    "id": "rainfall",
+    "title": "Rainfall in Delhi and Mumbai",
+    "source": "Delhi recorded 12 mm of rainfall on Tuesday. Mumbai recorded 20 mm of rainfall on Tuesday. The rain slowed morning traffic in both cities. City officials said no major flooding was reported.",
+    "comparison": {
+      "article_id": "authored-rainfall",
+      "source_characters": 190,
+      "source_sha256": "e8de0f28dacd32db32560cfce600a12f4bb331c48be7c9d8d41c2023a4576c4f",
+      "input_budget": 512,
+      "variants": [
+        {
+          "name": "translate_then_summarize_hybrid",
+          "summary": "दिल्ली में मंगलवार को 12 मिमी और मुंबई में 20 मिमी बारिश दर्ज की गई। बारिश से सुबह का यातायात धीमा रहा।",
+          "elapsed_seconds": null,
+          "failed_stage": null,
+          "verification": {
+            "summary_language": "hi",
+            "findings": [
+              {
+                "status": "supported",
+                "rule": "entity_mention_aligned",
+                "claim": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 6
+                  }
+                },
+                "summary_quote": "दिल्ली",
+                "summary_context": {
+                  "start": 0,
+                  "end": 30
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 44
+                    },
+                    "quote": "Delhi recorded 12 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "entity",
+                      "unit": "location",
+                      "value": [
+                        "delhi"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 0,
+                        "end": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "supported",
+                "rule": "scoped_value_agrees",
+                "claim": {
+                  "kind": "date",
+                  "unit": "weekday",
+                  "value": [
+                    "2"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 11,
+                    "end": 18
+                  }
+                },
+                "summary_quote": "मंगलवार",
+                "summary_context": {
+                  "start": 0,
+                  "end": 30
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 44
+                    },
+                    "quote": "Delhi recorded 12 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "date",
+                      "unit": "weekday",
+                      "value": [
+                        "2"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 36,
+                        "end": 43
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "supported",
+                "rule": "scoped_value_agrees",
+                "claim": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.012"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 22,
+                    "end": 29
+                  }
+                },
+                "summary_quote": "12 मिमी",
+                "summary_context": {
+                  "start": 0,
+                  "end": 30
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 44
+                    },
+                    "quote": "Delhi recorded 12 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "measurement",
+                      "unit": "m",
+                      "value": [
+                        "0.012"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 15,
+                        "end": 20
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "supported",
+                "rule": "entity_mention_aligned",
+                "claim": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "mumbai"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 33,
+                    "end": 38
+                  }
+                },
+                "summary_quote": "मुंबई",
+                "summary_context": {
+                  "start": 32,
+                  "end": 68
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 45,
+                      "end": 90
+                    },
+                    "quote": "Mumbai recorded 20 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "entity",
+                      "unit": "location",
+                      "value": [
+                        "mumbai"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 45,
+                        "end": 51
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "supported",
+                "rule": "scoped_value_agrees",
+                "claim": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.02"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 43,
+                    "end": 50
+                  }
+                },
+                "summary_quote": "20 मिमी",
+                "summary_context": {
+                  "start": 32,
+                  "end": 68
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 45,
+                      "end": 90
+                    },
+                    "quote": "Mumbai recorded 20 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "measurement",
+                      "unit": "m",
+                      "value": [
+                        "0.02"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 61,
+                        "end": 66
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "source_coverage": [
+              {
+                "fact": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 5
+                  }
+                },
+                "source_quote": "Delhi",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.012"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 15,
+                    "end": 20
+                  }
+                },
+                "source_quote": "12 mm",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "date",
+                  "unit": "weekday",
+                  "value": [
+                    "2"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 36,
+                    "end": 43
+                  }
+                },
+                "source_quote": "Tuesday",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "mumbai"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 45,
+                    "end": 51
+                  }
+                },
+                "source_quote": "Mumbai",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.02"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 61,
+                    "end": 66
+                  }
+                },
+                "source_quote": "20 mm",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "date",
+                  "unit": "weekday",
+                  "value": [
+                    "2"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 82,
+                    "end": 89
+                  }
+                },
+                "source_quote": "Tuesday",
+                "status": "not_detected",
+                "salient": false
+              }
+            ],
+            "unassessed_summary_spans": [
+              {
+                "start": 69,
+                "end": 103
+              }
+            ]
+          },
+          "stages": [
+            {
+              "name": "translate",
+              "input_language": "en",
+              "output_language": "hi",
+              "output": "दिल्ली में मंगलवार को 12 मिमी बारिश दर्ज की गई। मुंबई में मंगलवार को 20 मिमी बारिश दर्ज की गई। बारिश से दोनों शहरों में सुबह का यातायात धीमा हो गया। अधिकारियों ने कहा कि बड़ी बाढ़ की सूचना नहीं मिली।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "extract",
+              "input_language": "hi",
+              "output_language": "hi",
+              "output": "दिल्ली में मंगलवार को 12 मिमी बारिश दर्ज की गई। मुंबई में मंगलवार को 20 मिमी बारिश दर्ज की गई। बारिश से दोनों शहरों में सुबह का यातायात धीमा हो गया।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "abstract",
+              "input_language": "hi",
+              "output_language": "hi",
+              "output": "दिल्ली में मंगलवार को 12 मिमी और मुंबई में 20 मिमी बारिश दर्ज की गई। बारिश से सुबह का यातायात धीमा रहा।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            }
+          ]
+        },
+        {
+          "name": "summarize_then_translate_hybrid",
+          "summary": "दिल्ली में मंगलवार को 20 मिमी बारिश दर्ज की गई। बारिश से यातायात धीमा रहा।",
+          "elapsed_seconds": null,
+          "failed_stage": null,
+          "verification": {
+            "summary_language": "hi",
+            "findings": [
+              {
+                "status": "supported",
+                "rule": "entity_mention_aligned",
+                "claim": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 6
+                  }
+                },
+                "summary_quote": "दिल्ली",
+                "summary_context": {
+                  "start": 0,
+                  "end": 47
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 44
+                    },
+                    "quote": "Delhi recorded 12 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "entity",
+                      "unit": "location",
+                      "value": [
+                        "delhi"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 0,
+                        "end": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "supported",
+                "rule": "scoped_value_agrees",
+                "claim": {
+                  "kind": "date",
+                  "unit": "weekday",
+                  "value": [
+                    "2"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 11,
+                    "end": 18
+                  }
+                },
+                "summary_quote": "मंगलवार",
+                "summary_context": {
+                  "start": 0,
+                  "end": 47
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 44
+                    },
+                    "quote": "Delhi recorded 12 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "date",
+                      "unit": "weekday",
+                      "value": [
+                        "2"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 36,
+                        "end": 43
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "contradicted",
+                "rule": "scoped_value_conflicts",
+                "claim": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.02"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 22,
+                    "end": 29
+                  }
+                },
+                "summary_quote": "20 मिमी",
+                "summary_context": {
+                  "start": 0,
+                  "end": 47
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 44
+                    },
+                    "quote": "Delhi recorded 12 mm of rainfall on Tuesday.",
+                    "fact": {
+                      "kind": "measurement",
+                      "unit": "m",
+                      "value": [
+                        "0.012"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 15,
+                        "end": 20
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "source_coverage": [
+              {
+                "fact": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 5
+                  }
+                },
+                "source_quote": "Delhi",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.012"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 15,
+                    "end": 20
+                  }
+                },
+                "source_quote": "12 mm",
+                "status": "compared_with_warning",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "date",
+                  "unit": "weekday",
+                  "value": [
+                    "2"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 36,
+                    "end": 43
+                  }
+                },
+                "source_quote": "Tuesday",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "mumbai"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 45,
+                    "end": 51
+                  }
+                },
+                "source_quote": "Mumbai",
+                "status": "not_detected",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "measurement",
+                  "unit": "m",
+                  "value": [
+                    "0.02"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 61,
+                    "end": 66
+                  }
+                },
+                "source_quote": "20 mm",
+                "status": "not_detected",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "date",
+                  "unit": "weekday",
+                  "value": [
+                    "2"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 82,
+                    "end": 89
+                  }
+                },
+                "source_quote": "Tuesday",
+                "status": "not_detected",
+                "salient": false
+              }
+            ],
+            "unassessed_summary_spans": [
+              {
+                "start": 48,
+                "end": 74
+              }
+            ]
+          },
+          "stages": [
+            {
+              "name": "extract",
+              "input_language": "en",
+              "output_language": "en",
+              "output": "Delhi recorded 12 mm of rainfall on Tuesday. Mumbai recorded 20 mm of rainfall on Tuesday. The rain slowed morning traffic in both cities.",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "abstract",
+              "input_language": "en",
+              "output_language": "en",
+              "output": "Delhi recorded 20 mm of rain on Tuesday, and the rain slowed traffic.",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "translate",
+              "input_language": "en",
+              "output_language": "hi",
+              "output": "दिल्ली में मंगलवार को 20 मिमी बारिश दर्ज की गई। बारिश से यातायात धीमा रहा।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "water-tank",
+    "title": "A school rainwater project",
+    "source": "Delhi opened a rainwater collection tank at a government school. The tank holds 12,500 litres of water. The school will use the water for its garden. The city will inspect the tank each month.",
+    "comparison": {
+      "article_id": "authored-water-tank",
+      "source_characters": 192,
+      "source_sha256": "748a96fe43228492be47f9b961204ec09a0c086d2a0485d9c7aa4dd179596df2",
+      "input_budget": 512,
+      "variants": [
+        {
+          "name": "translate_then_summarize_hybrid",
+          "summary": "दिल्ली के एक सरकारी स्कूल में वर्षाजल संग्रह शुरू हुआ। टैंक की क्षमता 12,500 लीटर है।",
+          "elapsed_seconds": null,
+          "failed_stage": null,
+          "verification": {
+            "summary_language": "hi",
+            "findings": [
+              {
+                "status": "supported",
+                "rule": "entity_mention_aligned",
+                "claim": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 6
+                  }
+                },
+                "summary_quote": "दिल्ली",
+                "summary_context": {
+                  "start": 0,
+                  "end": 54
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 64
+                    },
+                    "quote": "Delhi opened a rainwater collection tank at a government school.",
+                    "fact": {
+                      "kind": "entity",
+                      "unit": "location",
+                      "value": [
+                        "delhi"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 0,
+                        "end": 5
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "status": "supported",
+                "rule": "scoped_value_agrees",
+                "claim": {
+                  "kind": "measurement",
+                  "unit": "l",
+                  "value": [
+                    "12500"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 70,
+                    "end": 81
+                  }
+                },
+                "summary_quote": "12,500 लीटर",
+                "summary_context": {
+                  "start": 55,
+                  "end": 85
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 65,
+                      "end": 103
+                    },
+                    "quote": "The tank holds 12,500 litres of water.",
+                    "fact": {
+                      "kind": "measurement",
+                      "unit": "l",
+                      "value": [
+                        "12500"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 80,
+                        "end": 93
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "source_coverage": [
+              {
+                "fact": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 5
+                  }
+                },
+                "source_quote": "Delhi",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "measurement",
+                  "unit": "l",
+                  "value": [
+                    "12500"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 80,
+                    "end": 93
+                  }
+                },
+                "source_quote": "12,500 litres",
+                "status": "aligned",
+                "salient": false
+              }
+            ],
+            "unassessed_summary_spans": []
+          },
+          "stages": [
+            {
+              "name": "translate",
+              "input_language": "en",
+              "output_language": "hi",
+              "output": "दिल्ली में एक सरकारी स्कूल में वर्षाजल संग्रह का टैंक शुरू किया गया। टैंक की क्षमता 12,500 लीटर है। स्कूल इस पानी का उपयोग अपने बगीचे के लिए करेगा। शहर हर महीने टैंक का निरीक्षण करेगा।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "extract",
+              "input_language": "hi",
+              "output_language": "hi",
+              "output": "दिल्ली में एक सरकारी स्कूल में वर्षाजल संग्रह का टैंक शुरू किया गया। टैंक की क्षमता 12,500 लीटर है। स्कूल इस पानी का उपयोग अपने बगीचे के लिए करेगा।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "abstract",
+              "input_language": "hi",
+              "output_language": "hi",
+              "output": "दिल्ली के एक सरकारी स्कूल में वर्षाजल संग्रह शुरू हुआ। टैंक की क्षमता 12,500 लीटर है।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            }
+          ]
+        },
+        {
+          "name": "summarize_then_translate_hybrid",
+          "summary": "दिल्ली में एक सरकारी स्कूल के लिए वर्षाजल संग्रह का टैंक शुरू किया गया।",
+          "elapsed_seconds": null,
+          "failed_stage": null,
+          "verification": {
+            "summary_language": "hi",
+            "findings": [
+              {
+                "status": "supported",
+                "rule": "entity_mention_aligned",
+                "claim": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 6
+                  }
+                },
+                "summary_quote": "दिल्ली",
+                "summary_context": {
+                  "start": 0,
+                  "end": 71
+                },
+                "evidence": [
+                  {
+                    "role": "compared_fact",
+                    "span": {
+                      "start": 0,
+                      "end": 64
+                    },
+                    "quote": "Delhi opened a rainwater collection tank at a government school.",
+                    "fact": {
+                      "kind": "entity",
+                      "unit": "location",
+                      "value": [
+                        "delhi"
+                      ],
+                      "qualifier": "exact",
+                      "span": {
+                        "start": 0,
+                        "end": 5
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "source_coverage": [
+              {
+                "fact": {
+                  "kind": "entity",
+                  "unit": "location",
+                  "value": [
+                    "delhi"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 0,
+                    "end": 5
+                  }
+                },
+                "source_quote": "Delhi",
+                "status": "aligned",
+                "salient": false
+              },
+              {
+                "fact": {
+                  "kind": "measurement",
+                  "unit": "l",
+                  "value": [
+                    "12500"
+                  ],
+                  "qualifier": "exact",
+                  "span": {
+                    "start": 80,
+                    "end": 93
+                  }
+                },
+                "source_quote": "12,500 litres",
+                "status": "not_detected",
+                "salient": false
+              }
+            ],
+            "unassessed_summary_spans": []
+          },
+          "stages": [
+            {
+              "name": "extract",
+              "input_language": "en",
+              "output_language": "en",
+              "output": "Delhi opened a rainwater collection tank at a government school. The tank holds 12,500 litres of water. The school will use the water for its garden.",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "abstract",
+              "input_language": "en",
+              "output_language": "en",
+              "output": "Delhi opened a school rainwater tank that holds 12,500 litres.",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            },
+            {
+              "name": "translate",
+              "input_language": "en",
+              "output_language": "hi",
+              "output": "दिल्ली में एक सरकारी स्कूल के लिए वर्षाजल संग्रह का टैंक शुरू किया गया।",
+              "elapsed_seconds": null,
+              "failure": null,
+              "details": {}
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
